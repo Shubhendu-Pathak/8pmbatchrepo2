@@ -1,0 +1,197 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- CSS only -->  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">   
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"   
+          crossorigin="anonymous">   
+    <title>dom</title> 
+</head> 
+<body> 
+     
+    
+    <div class="container">   
+        <div class="row">   
+          <div class="col s12">   
+            <div id="main" class="card">   
+              <div class="card-content">   
+                <span class="card-title">Task List</span>   
+                <div class="row">   
+                  <form id="task-form">   
+                    <div class="input-field col s12">   
+                      <input type="text" name="task" id="task" value="Walk the dog">   
+                      <label style="color: blue;" for="task">New Task</label>   
+                    </div>   
+                </div>   
+                <input type="submit" value="Add Task" class="btn">   
+                </form>   
+              </div>   
+              <div class="card-action">   
+                <h5 id="task-title" class="classtitle">Tasks</h5>   
+                <ul class="collection"><li class="collection-item">   
+                    List Item   
+                    <a href="#" class="delete-item secondary-content">   
+                      <i class="fa fa-remove"></i>   
+                    </a>   
+                  </li><li class="collection-item">   
+                    List Item   
+                    <a href="#" class="delete-item secondary-content">   
+                      <i class="fa fa-remove"></i>   
+                    </a>   
+                  </li>
+                  <li class="collection-item">   
+                    List Item   
+                    <a href="#" class="delete-item secondary-content">   
+                      <i class="fa fa-remove"></i>   
+                    </a>   
+                  </li>
+                  <li class="collection-item">   
+                    List Item   
+                    <a href="#" class="delete-item secondary-content">   
+                      <i class="fa fa-remove"></i>   
+                    </a>   
+                  </li>   
+                  <li class="collection-item">   
+                    List Item   
+                    <a href="#" class="delete-item secondary-content">   
+                      <i class="fa fa-remove"></i>   
+                    </a>   
+                  </li></ul>   
+                <button 
+                 class="clear-tasks btn black" href="#">Clear Tasks</button>   
+              </div>   
+            </div>   
+          </div>   
+        </div>   
+      </div>   
+      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>   
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>   
+
+
+    <script>
+
+// let a = document
+// a = document.all
+// a= document.doctype
+// a= document.domain
+// a= document.characterSet
+// a= document.scripts
+// a = document.links
+// a=document.images
+
+// // console.log(a);
+// // console.log(typeof a);
+
+// let s = document.scripts
+// console.log(s);
+// console.log(s.length);
+// // console.log(s[2]);
+
+// let ar = Array.from(s)
+// console.log(ar);
+
+// let arr = []
+// console.log(arr);
+
+
+//target single elements
+//getelementbyid
+
+// console.log( document.getElementById('task-title') );
+// console.log( document.getElementById('task-title').id )
+// console.log( document.getElementById('task-title').className )
+
+// console.log( document.getElementById('task-title').style.backgroundColor='red' )
+// console.log( document.getElementById('task-title').style.color='white' )
+// console.log( document.getElementById('task-title').style.textAlign='center' )
+
+// console.log( document.getElementById('task-title').textContent='JIMMY LAKE' )
+// console.log( document.getElementById('task-title').innerText='KITEn LAYS' )
+// console.log( document.getElementById('task-title').innerHTML=`<p>ORANGE</p>` )
+
+//queryselector
+// console.log( document.querySelector('#task-title') )
+// console.log( document.querySelector('.card-title') );
+// console.log( document.querySelector('h5') );
+
+// console.log( document.querySelector('li:first-child').textContent='POEM' );
+// console.log( document.querySelector('li:nth-child(2)').textContent='POEM2' );
+// console.log( document.querySelector('li:last-child').textContent='POEM5' );
+
+//multiselector
+
+// const a = document.getElementsByClassName('collection-item')
+// console.log(a);
+// console.log( a[0].style.color='green' );
+
+// Array.from(a).forEach(element => {
+//   element.textContent='LION'
+// });
+
+// const a = document.getElementsByTagName('li')
+// console.log(a);
+
+// Array.from(a).forEach(ele=>ele.style.backgroundColor='blue')
+
+// const a = document.querySelectorAll('li')
+// console.log(a);
+
+// a.forEach(ele=>ele.textContent='LEMON')
+
+//Traversing 
+
+// let  list = document.querySelector('.collection')
+// console.log(list);
+// let listitem = document.querySelector('li.collection-item:first-child')
+// console.log(listitem);
+
+// let a = list.childNodes
+// a = list.childNodes[0].nodeName
+// a = list.childNodes[0].nodeType
+
+// 1 = Element
+// 2=attribute
+// 3=text node
+// 8=comment
+// 9 = document itself
+// 10 doctype
+
+// children
+
+// a = list.children
+// a = list.children[1].textContent='GRASS'
+// a = list.firstChild
+// a= list.lastChild.style.color='blue'
+// a = list.childElementCount
+
+//parent
+// a = listitem.parentNode
+// a = listitem.parentElement
+// a = listitem.parentElement.parentElement
+// console.log(a);
+
+//create element
+const li = document.createElement('li')
+// li.className='new-collection-item'
+// li.id='new-li'
+li.setAttribute('id','newlis')
+li.setAttribute('class','new-item')
+
+li.textContent='NEW LI ITEM'
+li.innerHTML=`<a href="#">new LINK</a>`
+
+///append
+document.querySelector('ul').appendChild(li)
+// li.remove()
+
+console.log(li);
+
+
+
+
+    </script>
+
+      </body>
+      </html>
