@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+<div class="container">
+<!-- Baisc Grid layout -->
+
+<!-- <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+</tr> -->
+
+<div class="row">
+    <div class="col bg-success border">1 of 2</div>
+    <div class="col text-bg-success border">2 of 2</div>
+</div>
+
+<div class="row">
+    <div class="col text-bg-dark border">1 of 3</div>
+    <div class="col text-bg-success border">2 of 3</div>
+    <div class="col text-bg-warning border">3 of 3</div>
+</div>
+
+<br><br><br><br>
+
+<!-- col sizes -->
+
+<div class="row">
+    <div class="col-2 border text-bg-dark">4 col</div>
+    <div class="col-5 border text-bg-light">8col</div>
+    <div class="col-5 border text-bg-danger">8col</div>
+</div>
+
+<br><br><br><br>
+
+<div class="row">
+    <div class="col-2 col-md-4 border text-bg-dark">4 col</div>
+    <div class="col-5 col-md-6 border text-bg-light">8col</div>
+    <div class="col-5 col-md-6 border text-bg-danger">8col</div>
+</div>
+
+
+<br><br><br><br>
+
+<!-- row cols -->
+
+<div class="row row-cols-4">
+    <div class="col text-bg-primary border">1 of 3</div>
+    <div class="col text-bg-success border">2 of 3</div>
+    <div class="col text-bg-danger border">3 of 3</div>
+    <div class="col text-bg-danger border">3 of 3</div>
+    <div class="col text-bg-danger border">3 of 3</div>
+    <div class="col text-bg-danger border">3 of 3</div>
+    <div class="col text-bg-danger border">3 of 3</div>
+    <div class="col text-bg-danger border">3 of 3</div>
+    <div class="col text-bg-danger border">3 of 3</div>
+</div>
+
+<br><br><br><br>
+
+<!-- Nesting -->
+
+<div class="row">
+    <div class="col text-bg-primary border">1 of 3</div>
+    <div class="col text-bg-success border">
+        <div class="row">
+            <div class="col bg-warning">n1</div>
+            <div class="col bg-dark text-light">n2</div>
+        </div>
+    </div>
+</div>
+
+
+<br><br><br><br>
+
+<!-- Gutters -->
+
+<div class="row g-4">
+    <div class="col-md-4">
+        <div class="p-3 text-bg-primary">Content Item</div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-3 text-bg-primary">Content Item</div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-3 text-bg-primary">Content Item</div>
+    </div>
+
+</div>
+
+
+<br><br><br><br><br>
+
+
+<!-- Offsetting -->
+
+<div class="row ">
+    <div class="col-md-4 offset-2">
+        <div class="p-3 text-bg-warning">Content Item 4</div>
+    </div>
+    <div class="col-md-4 offset-2">
+        <div class="p-3 text-bg-primary">Content Item 4</div>
+    </div>
+
+
+
+<div class="row">
+    <div class="col-md-6 border offset-6 ">Hello world</div>
+</div>
+
+<br><br><br><br><br>
+
+<!-- Ordering-->
+
+<div class="row">
+    <div class="col bg-light border order-2">Column11</div>
+    <div class="col bg-light border order-4">Column22</div>
+    <div class="col bg-light border order-1">Column33</div>
+    <div class="col bg-light border order-3">Column44</div>
+</div>
+
+
+</div>
+
+
+<br><br><br><br><br>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
